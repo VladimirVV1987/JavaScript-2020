@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>5 Реализовать функцию с тремя параметрами: function mathOperation(arg1, arg2, operation)</title>
+</head>
+<body>
+<!--
+5 Реализовать функцию с тремя параметрами: function mathOperation(arg1, arg2, operation),
+где arg1, arg2 – значения аргументов, operation – строка с названием операции. В зависимости от
+переданного значения операции (использовать switch) выполнить одну из арифметических
+операций
+(использовать функции из задания 4) и вернуть полученное значение. -->
+
+
+<script src="js-5.js"> </script>
+  <script>
+    "use strict";
+
+
+    function mathOperation(arg1, arg2, operation){
+      switch (operation) {
+        case "+":
+          return addNumbers(arg1, arg2);
+        case "-":
+          return subtractingNumbers(arg1, arg2);
+        case "/":
+          return divideNumbers(arg1, arg2);
+        case "*":
+          return multiplyingNumbers(arg1, arg2);
+        default:
+          console.log("Error")
+      }
+    }
+
+    console.log(mathOperation(22, 4, "+"));
+    console.log(mathOperation(22, 4, "-"));
+    console.log(mathOperation(22, 4, "/"));
+    console.log(mathOperation(22, 4, "*"));
+
+</script>
+
+
+</body>
+</html>
